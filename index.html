@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light"><meta name="theme-color" content="#101c2e">
+<title>RetryCraft — API Resilience Lab</title><meta name="description" content="An interactive systems lab for retries, idempotency, circuit breakers and failure recovery.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" aria-label="Primary navigation">
+    <a class="brand" href="#overview" aria-label="RetryCraft home"><span class="brand-mark">RC</span><span><span class="brand-name">RetryCraft</span><span class="brand-sub">ENGINEERING LAB</span></span></a>
+    <div><p class="nav-label">WORKSPACE</p><nav class="nav" id="navigation"><button type="button" data-view="overview" class="active"><span class="nav-ico">◫</span>Overview</button><button type="button" data-view="retry" class=""><span class="nav-ico">↻</span>Retry lab</button><button type="button" data-view="idempotency" class=""><span class="nav-ico">⌁</span>Idempotency</button><button type="button" data-view="circuit" class=""><span class="nav-ico">◉</span>Circuit breaker</button></nav></div>
+    <div class="sidebar-bottom"><strong><span class="demo-dot"></span>Sandbox environment</strong><p>Fictional data only. No bank connection.</p></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><div class="eyebrow" id="eyebrow">OPERATIONS / PORTFOLIO DEMO</div><h1 class="page-title" id="page-title">RetryCraft — API Resilience Lab</h1><p class="page-subtitle" id="page-subtitle">An interactive systems lab for retries, idempotency, circuit breakers and failure recovery.</p></div><div class="top-actions"><span class="pill blue">● LOCAL DEMO</span><div class="avatar" title="Demo analyst">DA</div></div></header>
+    <div id="app" aria-live="polite"></div>
+    <footer class="footer"><span>RetryCraft · Portfolio engineering demonstration</span><span>Offline-first · No external dependencies · Fictional data</span></footer>
+  </main>
+</div>
+<div id="toast-region" aria-live="polite" aria-atomic="true"></div>
+<script src="core.js"></script><script src="app.js"></script>
+</body></html>
